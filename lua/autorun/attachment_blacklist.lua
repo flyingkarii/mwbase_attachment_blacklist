@@ -53,8 +53,7 @@ hook.Add("Initialize", "kari_att_group_blacklist", function()
         for _, weaponInfo in ipairs(weapons.GetList()) do
             local wep = weapons.GetStored(weaponInfo.ClassName)
             if not wep.Customization then continue end
-            print(weaponInfo)
-            
+
             for index, data in ipairs(wep.Customization) do
                 local attGroup = data[1]
 
