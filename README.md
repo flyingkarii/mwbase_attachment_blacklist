@@ -10,10 +10,10 @@ Blacklist attachment groups (perks, ammo, magazines, etc) from guns.
 - ban specific attachment groups for certain guns, darkrp jobs, and usergroups.
 
 ## Installation 
-* Download the addon as a zip\
-* Extract to any folder\
-* Drag folder to your server's addons (NOT SINGLEPLAYER FRIENDLY) folder and you're done. Only runs on server start so does not impact performance whatsoever when in-game.\ 
-* Edit through mwbase_attgroup_ban/lua/autorun/attachment_blacklist.lua\
+* Download the addon as a zip<br>
+* Extract to any folder<br>
+* Drag folder to your server's addons (NOT SINGLEPLAYER FRIENDLY) folder and you're done. Only runs on server start so does not impact performance whatsoever when in-game.<br>
+* Edit through mwbase_attgroup_ban/lua/autorun/attachment_blacklist.lua<br>
 * Use list found through "mw_attgroups" in your player console. Anything super long ending with \_mag or something should use wildcards table.
 
 ## Issues 
