@@ -1,4 +1,3 @@
---s
 local blacklisted = {
     att_perk = true,
     att_magazine = true
