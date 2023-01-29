@@ -1,12 +1,14 @@
 local blacklisted = {
-    att_ammo_default = true,
     att_perk = true,
     att_magazine = true
 }
 
 local wildcards = {
     ["*_mag"] = true,
+	["att_ammo*"] = true
 }
+
+local printOnRemove = false -- prints the gun that had its attachment group removed so I can tell if it worked
 
 local function ContainsWildcard(str, wildcard)
     local startPos, endPos = string.find(wildcard, "*", 1, true)
@@ -59,11 +61,20 @@ hook.Add("Initialize", "kari_att_group_blacklist", function()
 
                 for key, value in pairs(wildcards) do
                     if ContainsWildcard(attGroup, key) then
+                        if printOnRemove then
+						    print(string.format("Removed %s\'s %s category.", weaponInfo.ClassName, attGroup))
+                        end
+                        
                         wep.Customization[index] = {data[1]}
                     end
                 end
 
                 if blacklisted[attGroup] then
+					-- could duplicate, don't care
+                    if printOnRemove then
+					    print(string.format("Removed %s\'s %s category.", weaponInfo.ClassName, attGroup))
+                    end
+                    
                     wep.Customization[index] = {data[1]}
                 end
             end
