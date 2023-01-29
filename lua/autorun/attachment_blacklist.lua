@@ -1,3 +1,4 @@
+-- github tabs are so weird
 local blacklisted = {
     att_perk = true,
     att_magazine = true
