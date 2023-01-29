@@ -1,4 +1,4 @@
-# mwbase_attachment_blacklist
+# Modern Warfare Base: Attachment Group Blacklist
 Blacklist attachment groups (perks, ammo, magazines, etc) from guns.
 
 ## Features
