@@ -5,6 +5,7 @@ Blacklist attachment groups (perks, ammo, magazines, etc) from guns.
 - Ban specific attachment groups (such as perks, ammo, magazines, etc)
 - Remove special attachment groups with wildcards (such as *_mag to remove the ammo attachment group for every special gun who thinks they're cool)
 - Get a list of all attachment group names with concommand "mw_attgroups" (should only work in console but i might be dumb, untested)
+- Works with every custom weapon addon as long as you add their custom stuff (where wildcards are useful, a feature in this addon)
 
 ### Eventually:
 - ban specific attachment groups for certain guns, darkrp jobs, and usergroups.
